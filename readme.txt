@@ -13,7 +13,7 @@ Add Emoji One emoticons to your posts and pages.
 == Description ==
 This plugin will enable you to use the open source [Emoji One](http://emojione.com/) emoticons in your posts and pages. There are over 840 emoticons for you to use.
 
-Based on the [TypePad emoji for TinyMCE](https://wordpress.org/plugins/typepad-emoji-for-tinymce/) plugin by [picmo](https://profiles.wordpress.org/picmo/).
+Based on the [TypePad emoji for TinyMCE](https://wordpress.org/plugins/typepad-emoji-for-tinymce/) plugin by [picmo](https://profiles.wordpress.org/picmo/). Emoji set designed and offered free by [Emoji One](http://emojione.com/).
 
 == Installation ==
 Automatic Installation
