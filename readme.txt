@@ -25,7 +25,7 @@ Automatic Installation
 Manual Installation
 
 1. Download the current version of the WP Emoji One plugin.
-1. Unzip the fileand upload the wp-gfycat folder into the /wp-content/plugins directory of your WordPress installation.
+1. Unzip the fileand upload the wp-emoji/one folder into the /wp-content/plugins directory of your WordPress installation.
 1. Go to your Admin panel and activate the WP Emoji One plugin.
 
 == Frequently Asked Questions ==
