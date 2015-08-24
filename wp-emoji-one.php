@@ -3,7 +3,7 @@
  * Plugin Name: WP Emoji One
  * Plugin URI: http://labs.monchito.net/wp-emoji-one/
  * Description: Add open source Emoji One emoticons to your posts and pages.
- * Version: 0.5.0
+ * Version: 0.6.0
  * Author: Monchito.net
  * Author URI: http://www.monchito.net
  * License: GPLv2
@@ -74,7 +74,7 @@ function wp_emoji_one_admin_updated_notice(){
 #------------------------------------------------------------------------------
 function wp_emoji_one_admin_footer(){
 	$wp_emoji_one_plugin_data = get_plugin_data(__FILE__);
-	printf('%1$s by %2$s<br />', $wp_emoji_one_plugin_data['Title'].' '.$wp_emoji_one_plugin_data['Version'], $wp_emoji_one_plugin_data['Author']);
+	printf('%1$s by %2$s<br />', $wp_emoji_one_plugin_data['Title'].' '.$wp_emoji_one_plugin_data['Version'], $wp_emoji_one_plugin_data['Author'] . '<br>Emoji provided free by <a href="http://emojione.com" target="_blank">Emoji One</a>.');
 }
 
 #------------------------------------------------------------------------------
@@ -108,7 +108,7 @@ function wp_emoji_one_options_panel(){
 	$wp_emoji_one_setting_opt = get_option('wp_emoji_one_setting_opt');
 
 	if ((!is_array($wp_emoji_one_setting_opt) || $wp_emoji_one_ver != get_option('wp_emoji_one_checkver_stamp')) && !isset($_POST['SHTB_ADV_Reset'])) {
-		echo "<div id='setting-error-settings_updated' class='updated settings-error'><p><strong>".__("Error: Missing Database Table. The plugin may fail to create the databese table when install or update. Please re-install.","wp_emoji_one")."</strong></p></div>";
+		echo "<div id='setting-error-settings_updated' class='updated settings-error'><p><strong>".__("Error: Missing Database Table. The plugin may fail to create the database table when install or update. Please re-install.","wp_emoji_one")."</strong></p></div>";
 	}
 
 	// Update setting options
@@ -155,25 +155,25 @@ function wp_emoji_one_options_panel(){
 	</p>
 	<h3><?php _e("3. Your System Info", 'wp_emoji_one') ?></h3>
 	<p>
-	<?php _e('Server OS:', 'shtb_adv_lang') ?> <?php echo php_uname('s').' '.php_uname('r'); ?><br />
-	<?php _e('PHP version:', 'shtb_adv_lang') ?> <?php echo phpversion(); ?><br />
-	<?php _e('MySQL version:', 'shtb_adv_lang') ?> <?php echo mysql_get_server_info(); ?><br />
-	<?php _e('WordPress version:', 'shtb_adv_lang') ?> <?php bloginfo("version"); ?><br />
-	<?php _e('Site URL:', 'shtb_adv_lang') ?> <?php bloginfo("url"); ?><br />
-	<?php _e('WordPress URL:', 'shtb_adv_lang') ?> <?php bloginfo("wpurl"); ?><br />
-	<?php _e('WordPress language:', 'shtb_adv_lang') ?> <?php bloginfo("language"); ?><br />
-	<?php _e('WordPress character set:', 'shtb_adv_lang') ?> <?php bloginfo("charset"); ?><br />
-	<?php _e('WordPress theme:', 'shtb_adv_lang') ?> <?php $wp_emoji_one_theme = wp_get_theme(); echo $wp_emoji_one_theme['Name'].' '.$wp_emoji_one_theme['Version']; ?><br />
-	<?php _e('WP Emoji One version:', 'shtb_adv_lang') ?> <?php $wp_emoji_one_plugin_data = get_plugin_data(__FILE__); echo $wp_emoji_one_plugin_data['Version']; ?><br />
-	<?php _e('WP Emoji One URL:', 'shtb_adv_lang') ?> <?php echo $wp_emoji_one_plugin_url; ?><br />
-	<?php _e('Your browser:', 'shtb_adv_lang') ?> <?php echo $_SERVER['HTTP_USER_AGENT']; ?>
+	<?php _e('Server OS:', 'wp_emoji_one') ?> <?php echo php_uname('s').' '.php_uname('r'); ?><br />
+	<?php _e('PHP version:', 'wp_emoji_one') ?> <?php echo phpversion(); ?><br />
+	<?php _e('MySQL version:', 'wp_emoji_one') ?> <?php echo mysql_get_server_info(); ?><br />
+	<?php _e('WordPress version:', 'wp_emoji_one') ?> <?php bloginfo("version"); ?><br />
+	<?php _e('Site URL:', 'wp_emoji_one') ?> <?php bloginfo("url"); ?><br />
+	<?php _e('WordPress URL:', 'wp_emoji_one') ?> <?php bloginfo("wpurl"); ?><br />
+	<?php _e('WordPress language:', 'wp_emoji_one') ?> <?php bloginfo("language"); ?><br />
+	<?php _e('WordPress character set:', 'wp_emoji_one') ?> <?php bloginfo("charset"); ?><br />
+	<?php _e('WordPress theme:', 'wp_emoji_one') ?> <?php $wp_emoji_one_theme = wp_get_theme(); echo $wp_emoji_one_theme['Name'].' '.$wp_emoji_one_theme['Version']; ?><br />
+	<?php _e('WP Emoji One version:', 'wp_emoji_one') ?> <?php $wp_emoji_one_plugin_data = get_plugin_data(__FILE__); echo $wp_emoji_one_plugin_data['Version']; ?><br />
+	<?php _e('WP Emoji One URL:', 'wp_emoji_one') ?> <?php echo $wp_emoji_one_plugin_url; ?><br />
+	<?php _e('Your browser:', 'wp_emoji_one') ?> <?php echo $_SERVER['HTTP_USER_AGENT']; ?>
 	</p>
 	<h3><?php _e("4. Contact us", 'wp_emoji_one') ?></h3>
 	<p>
 	<?php _e("Monchito.net", 'wp_emoji_one') ?> [ <a href="http://www.monchito.net">http://www.monchito.net</a> ] 
 	</p>
 	<p>
-	<?php _e("To report a bug ,submit requests and feedback, ", 'wp_emoji_one') ?><?php _e('Use <a href="http://www.monchito.net/contacto">our contact form</a>', 'wp_emoji_one') ?>
+	<?php _e("To report a bug, submit requests and feedback, ", 'wp_emoji_one') ?><?php _e('use <a href="http://www.monchito.net/contacto">our contact form</a>', 'wp_emoji_one') ?>
 	</p>
 	</div>
 <?php } 

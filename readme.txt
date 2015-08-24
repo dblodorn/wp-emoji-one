@@ -3,15 +3,15 @@ Contributors: leogg
 Tags: emoji,emoticons,icons,emojione
 Donate link: http://labs.monchito.net/wp-emoji-one/
 Requires at least: 4.0
-Tested up to: 4.0
-Stable tag: 0.5.0
+Tested up to: 4.3
+Stable tag: 0.6.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/copyleft/gpl.html
 
 Add Emoji One emoticons to your posts and pages.
 
 == Description ==
-This plugin will enable you to use the open source [Emoji One](http://emojione.com/) emoticons in your posts and pages. There are over 840 emoticons for you to use.
+This plugin will enable you to use the open source [Emoji One](http://emojione.com/) emoticons in your posts and pages. There are over 1100 emoticons for you to use.
 
 Based on the [TypePad emoji for TinyMCE](https://wordpress.org/plugins/typepad-emoji-for-tinymce/) plugin by [picmo](https://profiles.wordpress.org/picmo/). Emoji set designed and offered free by [Emoji One](http://emojione.com/).
 
@@ -46,5 +46,12 @@ Please see the screenshots.
 4. That's it!
 
 == Changelog ==
+= 0.6.0 =
+* Updated version with +300 new icons
+* New categories
+* Plugin remembers last selected icon size from dropdown
+* Thanks to Michael from Emoji One for all his work on this update!
+* Added Russian translation by Flector
+* Added Spanish translation by leogg
 = 0.5.0 =
 * Initial release.

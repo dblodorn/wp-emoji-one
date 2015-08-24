@@ -6,11 +6,9 @@ function init() {
 	tinyMCEPopup.resizeToInnerSize();
 }
 
-function emojiinsert(icon, size) {
+function emojiinsert(icon) {
 
-	var icontag;
-	//icontag = '<img src="'+wpemojionedomain+'icons/'+icon+'" width="16" height="16" style="margin-left:3px; margin-right:3px; vertical-align:middle; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none;">';
-	icontag = '<img src="'+wpemojionedomain+'icons/'+icon+'" width="'+document.getElementById('iconsize').value+'" height="'+document.getElementById('iconsize').value+'" style="margin-left:3px; margin-right:3px; vertical-align:middle; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none;">';
+	var icontag = '<img src="'+wpemojionedomain+'icons/'+icon+'" width="'+document.getElementById('iconsize').value+'" height="'+document.getElementById('iconsize').value+'" style="margin-left:3px; margin-right:3px; vertical-align:middle; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none;">';
 
 	if (parent.tinymce.isIE) {
 		parent.tinymce.activeEditor.focus();
