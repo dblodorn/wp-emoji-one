@@ -1,3 +1,7 @@
+=== WP Emoji One APPLE ===
+
+Fork of WP Plugin using Apple Emoji Set
+
 === WP Emoji One ===
 Contributors: leogg
 Tags: emoji,emoticons,icons,emojione
