@@ -19,7 +19,7 @@
 			ed.addButton('wp_emoji_one', {
 				title : 'WP Emoji One',
 				cmd : 'wp_emoji_one',
-				image : url + '../../icons/1F600.png'
+				image : url + '../../icons/729.png'
 			});
 			
 			// Add a node change handler, selects the button in the UI when a image is selected
